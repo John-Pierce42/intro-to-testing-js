@@ -30,4 +30,13 @@ describe("sayHello", function (){
     it("should return a string 'Hello, Pat!' when executed", function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+});
+
+describe("trueOrFalse", function () {
+    it("it should be defined function", function () {
+        expect(typeof trueOrFalse).toBe("function");
+    });
+    it("it should return true when called", function () {
+        expect(typeof trueOrFalse()). toBe("boolean");
+    });
 })

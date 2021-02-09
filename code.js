@@ -13,3 +13,6 @@ function sayHello(input) {
     }
 
 }
+function trueOrFalse(input){
+    return true === true;
+}
