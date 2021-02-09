@@ -21,10 +21,13 @@ describe("sayHello", function (){
     it("should return a string when called", function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it("should return the string 'Hello' when executed", function() {
-        expect(sayHello()).toBe("Hello");
+    it("should return the string 'Hello, Alex!' when executed", function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
-    it("should never retrun 'undefined' when called", function () {
+    it("should never return 'undefined' when called", function () {
         !expect(sayHello()).not.toBe(undefined);
+    });
+    it("should return a string 'Hello, Pat!' when executed", function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 })
